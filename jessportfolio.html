@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio | Jesslyn Caroline</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            font-family: "Montserrat", sans-serif;
+            color: #1C435C;
+            background-color: aliceblue;
+        }
+        .container {
+            max-width: 1440px;
+            width: 100vw;
+            background-color: azure;
+            display: flex;
+            flex-direction: column;
+        }
+        .firstsec {
+            width: 100%;
+            height: 100vh; /* Ensures first section takes full viewport height */
+            display: flex;
+            flex-direction: column;
+        }
+        .intro {
+            width: 100%;
+            height: 32%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .intro h1 {
+            font-weight: 600;
+        }
+        .intro h1 span {
+            color: #6BC1FF;
+        }
+        .typed-cursor {
+            display: inline-block;
+            color: #1C435C;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0% {opacity: 1}
+            50% {opacity: 0}
+            100% {opacity: 1}
+        }
+        .intro desc {
+            font-weight: 450;
+        }
+        .floatimg {
+            width: 100%;
+            height: 68%;
+            display: flex;
+            gap: 105px;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        .floatimg img {
+            width: 50px;
+            height: 50px;
+        }
+        /* Floating animations for images */
+        .img1 {
+            margin-bottom: 160px;
+            animation: img1 3.8s ease-in-out infinite;
+        }
+        @keyframes img1 {
+            0% {margin-bottom: 160px;}
+            50% {margin-bottom: 140px;}
+            100% {margin-bottom: 160px;}
+        }
+        .img2 {
+            margin-bottom: 90px;
+            animation: img2 5s ease-in-out infinite;
+        }
+        @keyframes img2 {
+            0% {margin-bottom: 90px;}
+            50% {margin-bottom: 60px;}
+            100% {margin-bottom: 90px;}
+        }
+        .img3 {
+            margin-bottom: 180px;
+            animation: img3 3.5s ease-in-out infinite;
+        }
+        @keyframes img3 {
+            0% {margin-bottom: 180px;}
+            50% {margin-bottom: 200px;}
+            100% {margin-bottom: 180px;}
+        }
+        .img4 {
+            margin-bottom: 90px;
+            animation: img4 4s ease-in-out infinite;
+        }
+        @keyframes img4 {
+            0% {margin-bottom: 90px;}
+            50% {margin-bottom: 70px;}
+            100% {margin-bottom: 90px;}
+        }
+        .img5 {
+            margin-bottom: 140px;
+            animation: img5 3.4s ease-in-out infinite;
+        }
+        @keyframes img5 {
+            0% {margin-bottom: 140px;}
+            50% {margin-bottom: 160px;}
+            100% {margin-bottom: 140px;}
+        }
+        .img6 {
+            margin-bottom: 80px;
+            animation: img6 4s ease-in-out infinite;
+        }
+        @keyframes img6 {
+            0% {margin-bottom: 80px;}
+            50% {margin-bottom: 110px;}
+            100% {margin-bottom: 80px;}
+        }
+        .img7 {
+            margin-bottom: 150px;
+            animation: img7 4s ease-in-out infinite;
+        }
+        @keyframes img7 {
+            0% {margin-bottom: 150px;}
+            50% {margin-bottom: 190px;}
+            100% {margin-bottom: 150px;}
+        }
+        .secondsec {
+            width: 100%;
+            height: 100vh; /* Ensures second section takes full viewport height */
+            clear: both;
+            display: flex;
+            flex-direction: row;
+            background-color: #C1E1FF;
+        }
+        .secondsec .left, .secondsec .right {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="firstsec">
+            <div class="intro">
+                <h1>Hello! I'm <span id="name"></span></h1>
+                <desc>A Tech Geek who loves to code and always up for a new challenge!</desc>
+            </div>
+            <div class="floatimg">
+                <img src="./Image/cloud-service.png" class="img1">
+                <img src="./Image/cloud-storage.png" class="img2">
+                <img src="./Image/code.png" class="img3">
+                <img src="./Image/flowchart.png" class="img4">
+                <img src="./Image/folder.png" class="img5">
+                <img src="./Image/python.png" class="img6">
+                <img src="./Image/cpp.png" class="img7">
+            </div>
+        </div>
+        <div class="secondsec">
+            <div class="left">
+                <img src="">
+            </div>
+            <div class="right">
+                <!-- Add content here if needed -->
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            new Typed("#name", {
+                strings: ["Jesslyn Caroline."],
+                typeSpeed: 80,
+                showCursor: true,
+                cursorChar: "|",
+                autoInsertCss: true
+            });
+        });
+    </script>
+</body>
+</html>
